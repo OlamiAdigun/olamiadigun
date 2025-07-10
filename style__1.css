@@ -73,7 +73,7 @@ header img{
     justify-content: center;
 }
 .one{
-    flex: 1;
+    flex: 1;    
 }
 .two{
     flex: 4;
@@ -99,7 +99,7 @@ marquee{
 .post__container{
     flex: 3;
     margin-right: 20px;
-    background-color:white;
+    background-color:rgb(205, 204, 204);
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
@@ -114,11 +114,11 @@ marquee{
     padding-bottom: 20px;
 }
 .post img{
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     margin-right: 20px;
     flex: 1;
-    border-radius: 45%;
+    border-radius: 2%;
 }
 .post div{
      flex:3;
@@ -199,10 +199,11 @@ marquee{
     outline: none;
 }
 .search__bar button{
-    background-color: #d75905;
+    background-color: #101010;
     color: white;
     padding: 8px;
     border-radius: 5px;
+    font-weight: 500;
     outline:0;
 }
 .recent__posts{
@@ -261,11 +262,21 @@ marquee{
     text-decoration: underline;
 }
 
-@media(max-width:768px){
+@media(max-width:1115px){
+    .search__bar button{
+    margin-top: 10px;
+}
+}
+
+@media(max-width:955px){
    .breaking__news__bar{
         font-size: 14px;
         color:red;
     }
+    .post__container{
+    
+    margin-top: 10px;
+}
 
     .breaking__news__content{
         font-size: 14px;
@@ -288,6 +299,22 @@ marquee{
     .read__more__container{
         justify-content: flex-start;
     }
+    .breaking__news__text{
+    margin-left: 30px;
+}
+.post__title{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.post img{
+    position: relative;
+    left: 100px;
+    align-items: center;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
 }
 
 @media(max-width:530px){
@@ -304,6 +331,14 @@ marquee{
     .post__title{
         font-size:20px
     }
+    .breaking__news__text{
+    margin-left: 30px;
+}
+.post img{
+    max-width: 250px;
+    position: relative;
+    left: 50px;
+}
 }
 
 
